@@ -4,7 +4,7 @@
         return empty($val);
     }
 
-    function is_minValue ($str, $minValue){
+    function is_minValue($str, $minValue){
         $str = trim($str);
         $str = filter_var($str, FILTER_SANITIZE_STRING);
 
@@ -15,7 +15,7 @@
 
     }
 
-    function is_maxValue ($str, $maxValue){
+    function is_maxValue($str, $maxValue){
 
         $str = trim($str);
         $str = filter_var($str, FILTER_SANITIZE_STRING);

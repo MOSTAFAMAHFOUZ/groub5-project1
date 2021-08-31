@@ -1,5 +1,4 @@
 <?php
-session_start(); 
 
 function SE_input($key,$value){
 
@@ -7,7 +6,7 @@ function SE_input($key,$value){
     
 }
 
- echo SE_input($name,'ahmed');
+//  echo SE_input($name,'ahmed');
 
 
 function SE_remove($key){
@@ -16,7 +15,7 @@ function SE_remove($key){
   }
 }
 
-function SE_error($error){
+function SE_display_error($error){
     
     if (isset($_SESSION[$error])){
         return $_SESSION[$error];
@@ -34,3 +33,5 @@ function SE_success($success){
     }
 
 }
+
+// type session and remove it after displaying

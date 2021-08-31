@@ -1,10 +1,11 @@
+<?php require_once '../app/config.php'; ?>     
+
 <?php
-session_start();
 include('../inc/header.php');  ?>     
 
     <div class="jumbotron p-2 m-4">
         <h3 class=""> 
-            <a class="btn btn-success btn-lg" href="index.php" role="button">Add New Category </a>
+            <a class="btn btn-success btn-lg" href="<?php echo URL.'categories/add.php'; ?>" role="button">Add New Category </a>
         </h3>
     </div>
     <h1 class=" p-3 border display-4">  All Categories  </h1>
